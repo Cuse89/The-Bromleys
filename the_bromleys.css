@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+  .parallax_container {
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 75%;
+  }
+
+
+#parallax_container1 {
+  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/12888735_1707668839448562_359292381025869912_o.jpg?oh=94e0ce4db429defaebfb31757b8de053&oe=5A324786');
+}
+
+#parallax_container2 {
+  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13575923_1748630248685754_8672281502123516648_o.jpg?oh=d92d721f28cfa6a879006790fa0fe4c2&oe=5A30C0D5');
+
+}
+
+#gigs {
+  background-color: #333;
+  color: white;
+}

@@ -3,18 +3,44 @@ html {
     width: 100%;
 }
 
-
+body {
+  color: #777;
+  line-height: 2;
+  font-family: 'Lucida Sans Unicode',  sans-serif;
+}
   .parallax_container {
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-position: center;
-      height: 75%;
+      background-position: right;
+      height: 100%;
+
   }
 
-
 #parallax_container1 {
-  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/12888735_1707668839448562_359292381025869912_o.jpg?oh=94e0ce4db429defaebfb31757b8de053&oe=5A324786');
+  background-image: url('bromleys colour.jpg');
+}
+
+#logo {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 75vw;
+  position: absolute;
+}
+
+#scroll {
+  width: 5%;
+  min-width: 50px;
+  left: 50%;
+  position: absolute;
+  bottom: 20px;
+}
+
+#scroll:hover {
+  transform: scale(1.2);
 }
 
 #parallax_container2 {
@@ -22,7 +48,18 @@ html {
 
 }
 
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about h3 {
+    color: #111;
+    margin-bottom: 30px;
+}
+
 #gigs {
+  padding-top: 50px;
   background-color: #333;
   color: white;
 }

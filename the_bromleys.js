@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('#scroll').css('margin-left', '-' + $('#scroll').width()/2 + 'px');
-});
+
 
 
 
@@ -57,10 +57,13 @@ function createGig(gig) {
   $('#gigList').append(`<div class="list-group-item gigEntry"><a target='_blank' href='${gig.website}'><h4 class='list-group-item-heading'> ${gig.day} ${gig.date} ${gig.month} ${gig.time} - ${gig.eventTitle} -  ${gig.venue}, ${gig.town}</h4><p class='list-group-item-text'>${gig.description}</p></a></div>`);
 }
 
-$('#earliestGigDelete').click(function(){
+$('#firstGigDelete').click(function(){
   $('.gigEntry').first().remove();
 })
 
-$('#latestGigDelete').click(function(){
+$('#lastGigDelete').click(function(){
   $('.gigEntry').last().remove();
 })
+
+
+});

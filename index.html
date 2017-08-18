@@ -7,6 +7,7 @@
   <title>The Bromleys</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!---navigation bar----------------------->
   <nav class='navbar navbar-inverse navbar-fixed-top'>
     <div class='container-fluid'>
       <div class='navbar-header'>
@@ -28,6 +29,7 @@
     </div>
     </div>
   </nav>
+  <!--end of navigation bar----------------->
 <div class='parallax_container' id='parallax_container1'>
   <div class="container text-center">
     <img id='logo' src='logo.png'/>
@@ -40,6 +42,7 @@
     </div>
       <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
         <h3>About</h3>
+        <br>
         <p>The Bromleys are John, Jenny & James (father, daughter & son). Each gifted with a powerful voice, they sing a mixture of traditional and contemporary folk songs in three part harmony, both a capella and with instrumental accompaniment. Together, The Bromleys create a rich blend of voices that is unique to their kin. They have each performed solo and as part of a variety of bands, including Kimber's Men, A Rookery and Jump Jive & Wail and it was only ever a matter of time until they began singing together. It runs through their blood.
         </p>
       </div>
@@ -61,10 +64,54 @@
 </div>
 </div>
 </div>
-<div class='parallax_container' id='parallax_container2'></div>
-<div id='photos'>
+<div class='parallax_container' id='parallax_container2'>
+  <div class="container-fluid text-right">
+    <img id='quote' src='quote.png'/>
+  </div>
 </div>
-<!-- Modal -->
+
+<!-- Gallery----------------------------------------------------->
+<div class='container-fluid text-center' id='gallery'>
+  <h3>Gallery</h3>
+  <br>
+  <div class='row>'
+    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'
+  <ul id='grid'>
+    <li class='grid_list'>
+    <div class='image_holder'>
+      <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/20626729_1948119205403523_3714528780057573921_o.jpg?oh=8349094dc375858c60d99f6f7b2ba350&oe=5A35EA8F'/>
+    </div>
+  </li>
+  <li class='grid_list'>
+  <div class='image_holder'>
+    <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/20626180_1948119062070204_2780033433523831354_o.jpg?oh=9d8ace0d6134fcb46bc26b2a51e92953&oe=5A1B9FC4'/>
+  </div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/20604477_1948119068736870_3928721377895027446_n.jpg?oh=40e5197499460edc6ea03a5d1dec3dc9&oe=5A2AC777'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/14939367_1815232805358831_8299599505136130288_o.jpg?oh=855b0be40a86d53d1e3d40cb77d39331&oe=5A27CCF7'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/15000635_1815232802025498_5891123757261380191_o.jpg?oh=98f6c1da8553df1fa64a3d5be1392a9b&oe=5A16AF60'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/15025219_1815232808692164_1069023235331712728_o.jpg?oh=0559309565785ac6be9540ab579f3f4b&oe=5A3050B5'/>
+</div>
+</li>
+  </ul>
+</div>
+</div>
+</div>
+<!-- Modal ------------------------------------------------------>
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -133,8 +180,8 @@
       </div>
       <div class="modal-footer">
         <button type="reset" class='btn btn-default' id='gigReset' value="send">Reset form</button>
-        <button type="button" class='btn btn-default' id='earliestGigDelete' value="send">Delete earliest gig</button>
-        <button type="button" class='btn btn-default' id='latestGigDelete' value="send">Delete latest gig</button>
+        <button type="button" class='btn btn-default' id='firstGigDelete' value="send">Delete first gig</button>
+        <button type="button" class='btn btn-default' id='lastGigDelete' value="send">Delete last gig</button>
         <button type='submit' class='btn btn-default' id='gigCreate' value="send">Submit</button>
         <button type='button' class='btn btn-default' data-dismiss="modal">Close</button>
       </div>

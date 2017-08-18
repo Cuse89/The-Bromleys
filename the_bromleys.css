@@ -1,25 +1,28 @@
 html {
     height: 100%;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: #777;
+  color: black;
   line-height: 2;
   font-family: 'Lucida Sans Unicode',  sans-serif;
 }
-  .parallax_container {
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: right;
-      height: 100vh;
 
-  }
+.parallax_container {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 #parallax_container1 {
   background-image: url('bromleys colour.jpg');
+  background-position: right;
 }
+
 
 #logo {
   top: 0;
@@ -43,27 +46,77 @@ body {
   transform: scale(1.2);
 }
 
-#parallax_container2 {
-  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13575923_1748630248685754_8672281502123516648_o.jpg?oh=d92d721f28cfa6a879006790fa0fe4c2&oe=5A30C0D5');
 
-}
 
 #about {
   padding-top: 50px;
   padding-bottom: 50px;
-}
 
-#about h3 {
-    color: #111;
-    margin-bottom: 30px;
 }
 
 #gigs {
   padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #333;
   color: white;
 }
 
 #gigList a {
-  color: #777;
+  color: black;
+  text-decoration: none;
+}
+
+#parallax_container2 {
+  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13575923_1748630248685754_8672281502123516648_o.jpg?oh=d92d721f28cfa6a879006790fa0fe4c2&oe=5A30C0D5');
+  height: 90vh;
+  background-position: center top;
+  position: relative;
+}
+
+#quote {
+  width: 70vw;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+#gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #333;
+  color: white;
+}
+
+#grid {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.grid_list {
+    float: left;
+    width: 33.333%;
+    height: 200px;
+    overflow: hidden;
+    box-sizing: border-box; /*must be border box so that the border does not make images exceed 100% width*/
+    border: 2px white solid;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.image_holder {
+  height: 100%;
+  display: flex;
+}
+
+.grid_photo {
+    width: 125%;  /* >100% so the longer landscape photos fill the whole tile*/
+    align-self: center;
+}
+
+.grid_photo:hover {
+  transform: scale(1.2);
 }

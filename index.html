@@ -22,20 +22,23 @@
       <ul class='nav navbar-nav'>
         <li class='active'><a href='#'>Home</a></li>
         <li><a href='#about'>About</a></li>
+        <li><a href='#gallery'>Gallery</a></li>
         <li><a href='#gigs'>Gigs</a></li>
-        <li><a href='#'>Media</a></li>
         <li><a href='#myModal' data-toggle="modal">Create/Delete Gig</a></li>
       </ul>
     </div>
     </div>
   </nav>
-  <!--end of navigation bar----------------->
+  <!--Parallax Container 1---------------------------------------->
 <div class='parallax_container' id='parallax_container1'>
   <div class="container text-center">
     <img id='logo' src='logo.png'/>
   </div>
-  <a href="#about"><img id='scroll'src='scroll.png'/></a>
+  <a href="#about">
+    <img id='scroll'src='scroll.png'/>
+  </a>
 </div>
+<!-- About Section ------------------------------------------------>
 <div id='about' class='container-fluid text-center'>
   <div class="row">
     <div class='col-sm-1 col-md-1 col-lg-1'>
@@ -50,26 +53,6 @@
     </div>
   </div>
 </div>
-<div class='container-fluid text-center' id="gigs">
-  <div class ='row'>
-    <div class='col-sm-1 col-md-1 col-lg-1'>
-    </div>
-    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-    <h3>Gigs</h3>
-    <br>
-    <div class='list-group' id="gigList">
-    </div>
-</div>
-<div class="col-sm-1 col-md-1 col-lg-1">
-</div>
-</div>
-</div>
-<div class='parallax_container' id='parallax_container2'>
-  <div class="container-fluid text-right">
-    <img id='quote' src='quote.png'/>
-  </div>
-</div>
-
 <!-- Gallery----------------------------------------------------->
 <div class='container-fluid text-center' id='gallery'>
   <h3>Gallery</h3>
@@ -84,7 +67,7 @@
   </li>
   <li class='grid_list'>
   <div class='image_holder'>
-    <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/20626180_1948119062070204_2780033433523831354_o.jpg?oh=9d8ace0d6134fcb46bc26b2a51e92953&oe=5A1B9FC4'/>
+    <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20914444_1955022508046526_8090067511524461303_n.jpg?oh=5bd795349161e2e705c1433d05664c0e&oe=5A1F847D'/>
   </div>
 </li>
 <li class='grid_list'>
@@ -107,9 +90,62 @@
   <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/15025219_1815232808692164_1069023235331712728_o.jpg?oh=0559309565785ac6be9540ab579f3f4b&oe=5A3050B5'/>
 </div>
 </li>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/1916679_1707679202780859_3292656403658918189_n.jpg?oh=b11260ddf71fef2bb8a398473b770b6e&oe=5A278FEA'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/995346_1707675712781208_5713377040191280885_n.jpg?oh=429ae406cbaaa910d73d4e377d2d02eb&oe=5A241E03'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/12208318_1707668839448562_359292381025869912_n.jpg?oh=9993f81cfd8c78f73ee49c06d205090c&oe=5A390BC0'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/12688177_1693582467523866_4638810967759931870_n.jpg?oh=40de53eff5f110190bcb633ff55b3baa&oe=5A1C18E4'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/14915258_1815232865358825_6440374645781736228_n.jpg?oh=92d34ac98e62174c39cbd4f5cb6777f0&oe=5A31B21B'/>
+</div>
+</li>
+<li class='grid_list'>
+<div class='image_holder'>
+  <img class='grid_photo' src='https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/20626180_1948119062070204_2780033433523831354_o.jpg?oh=9d8ace0d6134fcb46bc26b2a51e92953&oe=5A1B9FC4'/>
+</div>
+</li>
   </ul>
 </div>
 </div>
+</div>
+
+<!-- Parallax 2 section-------------------------------------------->
+<div class='parallax_container' id='parallax_container2'>
+  <div class="container-fluid text-right">
+    <img id='quote' src='quote.png'/>
+  </div>
+</div>
+<!-- Gigs section ---------------------------------------------------->
+<div class='container-fluid text-center' id="gigs">
+  <div class ='row'>
+    <div class='col-sm-1 col-md-1 col-lg-1'>
+    </div>
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+      <h3>Gigs</h3>
+      <br>
+      <div class='list-group' id="gigList">
+      </div>
+    </div>
+    <div class="col-sm-1 col-md-1 col-lg-1">
+    </div>
+  </div>
 </div>
 <!-- Modal ------------------------------------------------------>
 <div class="modal fade" id="myModal" role="dialog">

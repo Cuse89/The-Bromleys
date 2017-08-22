@@ -145,3 +145,40 @@ body {
 .grid_photo:hover {
   transform: scale(1.2);
 }
+
+#grid_photo_big_wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: black;
+  overflow: hidden;
+  display: none;
+  z-index: 3;
+}
+
+.grid_photo_big {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#close {
+    position: relative;
+    top: 2%;
+    left: 95%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

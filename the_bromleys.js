@@ -41,8 +41,31 @@ $(document).ready(function(){
   $('#scroll').css('margin-left', '-' + $('#scroll').width()/2 + 'px');
 
 for (var i = 0; i < photos.length; i++) {
-  $('#grid').append(`<li class='grid_list'><div class='image_holder'><img class='grid_photo' src='${photos[i]}'/></div></li>`);
+  $('#grid').append(`<div class='grid_list'><div class='image_holder'><img class='grid_photo' id='grid_photo${i}' src='${photos[i]}' data-number = '${i}'/></div></div>`);
+
 };
+
+
+// NEEDS LOOKING INTO, (the cross, and the size of the photos)
+  $('.grid_photo').click(function() {
+    var photoArrayIndex = $(this).data('number')
+  $('#grid_photo_big_wrapper').show();
+  $('#grid_photo_big_wrapper').append(`<span id='close'>&times;</span><img class='grid_photo_big' id='grid_photo_big${photoArrayIndex}' src='${photos[photoArrayIndex]}'/>`);
+  $('.grid_photo_big').css('margin-left', '-' + $('#grid_photo_big' + photoArrayIndex).width()/2 + 'px');
+  $('.grid_photo_big').css('margin-top', '-' + $('#grid_photo_big' + photoArrayIndex).height()/2 + 'px');
+  $('body').css('overflow-y', 'hidden');
+  /*Using 'event delegation', as the span ('#close') is added dynamically*/
+    $(document).on('click', '#close', function(){
+      $('.grid_photo_big').hide();
+      $('#grid_photo_big_wrapper').hide();
+      $('body').css('overflow-y', 'auto');
+    });
+});
+
+
+
+
+
 
 $("#eventForm").submit(function(event) {
   var x = ( $(this).serializeArray() );

@@ -184,9 +184,9 @@ body {
 }
 
 #close {
-    position: relative;
-    top: 2%;
-    left: 95%;
+    position: absolute;
+    top: 10%;
+    right: 20px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;

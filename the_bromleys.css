@@ -8,7 +8,15 @@ html {
 body {
   color: black;
   line-height: 2;
-  font-family: 'Lucida Sans Unicode',  sans-serif;
+  font-family: 'Spectral', serif;
+
+  font-size: 16;
+}
+
+#soundcloud {
+  left: 800px;
+  top: 0;
+  position: absolute;
 }
 
 .parallax_container {
@@ -19,10 +27,18 @@ body {
 }
 
 #parallax_container1 {
-  background-image: url('bromleys colour.jpg');
-  background-position: right;
+  background-image: url('trees.png');
+  background-position: bottom;
 }
 
+
+
+#trees {
+  width: 100%;
+  float: bottom;
+  top: 285px;
+  position: relative;
+}
 
 #logo {
   top: 0;
@@ -32,6 +48,7 @@ body {
   margin: auto;
   width: 75vw;
   position: absolute;
+  z-index: 1;
 }
 
 #scroll {
@@ -67,16 +84,16 @@ body {
 }
 
 #parallax_container2 {
-  background-image: url('https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13575923_1748630248685754_8672281502123516648_o.jpg?oh=d92d721f28cfa6a879006790fa0fe4c2&oe=5A30C0D5');
+  background-image: url('bromleys colour.jpg');
   height: 90vh;
-  background-position: center top;
+  background-position: right top;
   position: relative;
 }
 
 #quote {
   width: 70vw;
-  bottom: 0;
-  right: 0;
+  top: 10;
+  left: 0;
   position: absolute;
 }
 
@@ -181,4 +198,8 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+#videos {
+  padding-top: 50px;
 }

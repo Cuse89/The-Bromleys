@@ -46,7 +46,6 @@ for (var i = 0; i < photos.length; i++) {
 };
 
 
-// NEEDS LOOKING INTO, (the cross, and the size of the photos)
   $('.grid_photo').click(function() {
     var photoArrayIndex = $(this).data('number')
   $('#grid_photo_big_wrapper').show();
@@ -56,7 +55,7 @@ for (var i = 0; i < photos.length; i++) {
   $('body').css('overflow-y', 'hidden');
   /*Using 'event delegation', as the span ('#close') is added dynamically*/
     $(document).on('click', '#close', function(){
-      $('.grid_photo_big').hide();
+      $('#grid_photo_big_wrapper').empty();
       $('#grid_photo_big_wrapper').hide();
       $('body').css('overflow-y', 'auto');
     });

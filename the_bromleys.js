@@ -38,7 +38,6 @@ var todFolkFest = {
 }
 
 $(document).ready(function(){
-  $('#scroll').css('margin-left', '-' + $('#scroll').width()/2 + 'px');
 
 for (var i = 0; i < photos.length; i++) {
   $('#grid').append(`<div class='grid_list'><div class='image_holder'><img class='grid_photo' id='grid_photo${i}' src='${photos[i]}' data-number = '${i}'/></div></div>`);

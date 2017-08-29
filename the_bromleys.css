@@ -27,8 +27,8 @@ body {
 }
 
 #parallax_container1 {
-  background-image: url('trees.png');
-  background-position: bottom;
+  background-image: url('bromleys colour.jpg');
+  background-position: right;
 }
 
 
@@ -201,6 +201,6 @@ body {
     cursor: pointer;
 }
 
-#videos {
+#media {
   padding-top: 50px;
 }
